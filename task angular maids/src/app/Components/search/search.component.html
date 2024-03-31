@@ -1,0 +1,20 @@
+@if (Student) {
+    <div class="card">
+      <div class="card-img">
+          <img [src]="Student.avatar">
+      </div>
+      <div class="desc">
+          <h6 class="primary-text ">ID: {{Student.id}}</h6>
+          <h6 class="primary-text ">First Name: {{Student.first_name}}</h6>
+          <h6 class="primary-text ">Last Name: {{Student.last_name}}</h6>
+          <h6 class="primary-text ">Email: {{Student.email}}</h6>
+      </div>
+    </div>
+  }@else{
+   
+      <div class="spinner-container">
+        <div class="spinner-border text-light " role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+  }
